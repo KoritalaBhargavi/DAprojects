@@ -54,6 +54,9 @@ This project analyzes Twitter data and presents key insights using an interactiv
 ![Dashboard Screenshot](https://github.com/KoritalaBhargavi/PowerBIProject/blob/main/Screenshot%202025-04-17%20173228.png)
 
 ---
+## 📥 Download Dashboard
+[Click here to download the .pbix Power BI dashboard](https://github.com/KoritalaBhargavi/PowerBIProject/blob/main/TwitterAnalyticsDashboard.pbix)
+
 
 ## 🚀 Tools Used
 - Microsoft Power BI
