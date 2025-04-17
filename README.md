@@ -51,7 +51,7 @@ This project analyzes Twitter data and presents key insights using an interactiv
 
 ## 📸 Dashboard Screenshot
 
-![Dashboard Screenshot](https://github.com/KoritalaBhargavi/PowerBIProject/blob/main/Screenshot%202025-04-17%20173410.png)
+![Dashboard Screenshot](https://github.com/KoritalaBhargavi/PowerBIProject/blob/main/Screenshot%202025-04-17%20173228.png)
 
 ---
 
