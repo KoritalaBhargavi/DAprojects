@@ -3,6 +3,8 @@
 This project analyzes Twitter data and presents key insights using an interactive Power BI dashboard. It was built to track tweet engagements, impressions, click performance, and categorize tweet behavior over time.
 
 ---
+📥 **Download the dataset here:**  
+[SocialMedia.csv](https://github.com/KoritalaBhargavi/PowerBIProject/blob/main/SocialMedia.csv)
 
 ## 📌 Objectives
 
