@@ -101,7 +101,7 @@ These messages are displayed using **Card visuals** controlled by DAX logic.
 
 ## 📁 Screenshot
 
-![Dashboard Screenshot](./Screenshot 2025-04-17 173410.png) <!-- Replace with actual image path in repo -->
+![Dashboard Screenshot](Screenshot 2025-04-17 173410.png) <!-- Replace with actual image path in repo -->
 
 ---
 
