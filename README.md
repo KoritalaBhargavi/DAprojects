@@ -1,108 +1,69 @@
-# 📊 Twitter Analytics Dashboard
+# 📊 Twitter Data Analytics Dashboard - Power BI
 
-This project analyzes Twitter data using Power BI, aiming to uncover insights about tweet engagement, media performance, and user interactions. The dashboard provides a comprehensive overview through interactive visuals and advanced DAX-based logic.
-
----
-
-## 🚀 Project Objectives
-
-- Analyze tweet-level engagement metrics like likes, retweets, replies, impressions, and clicks.
-- Understand how users interact with tweets through media, hashtags, URLs, and profile views.
-- Segment tweets based on content type (links, hashtags, media, etc.).
-- Create conditional visuals based on specific tweet characteristics and time filters.
-- Enable dynamic messaging for graphs when data doesn’t meet specified conditions.
+This project analyzes Twitter data and presents key insights using an interactive Power BI dashboard. It was built to track tweet engagements, impressions, click performance, and categorize tweet behavior over time.
 
 ---
 
-## 🛠️ Tools Used
+## 📌 Objectives
 
-- **Power BI Desktop**
-- **DAX (Data Analysis Expressions)**
-- **Twitter Engagement Dataset**
+- Understand how tweets perform over time.
+- Compare interactions like likes, retweets, replies, and clicks.
+- Visualize engagement metrics by tweet type and behavior.
+- Apply complex logic-based filtering (e.g., by time, word count, tweet content).
+- Add dynamic visual control to display graphs only at specific times or conditions.
 
 ---
 
 ## ✅ Tasks Performed
 
-### 📌 KPI Cards
-1. **Sum of Media Views**
-2. **Overall Impressions on the Post**
-3. **Engagement Rate**
-4. **Count of Tweets Engaged**
+### 📈 KPIs (Cards & Gauges)
+1. ✅ **Sum of Media Views** (Card)  
+2. ✅ **Overall Impressions on the Post** (Card)  
+3. ✅ **Engagement Rate** (Card)  
+4. ✅ **Count of Tweets Engaged** (Card)  
+5. ✅ **Sum of Likes** (Gauge Chart)  
+6. ✅ **Max of Retweets** (Gauge Chart)  
 
-### 📈 Gauges
-5. **Sum of Likes**
-6. **Max of Retweets**
+### 📊 Visualizations
+7. ✅ **Sum of URL Clicks by Tweet** (Clustered Bar Chart)  
+8. ✅ **Sum of Hashtag Clicks, URL Clicks, and User Profile Clicks** (Pie Chart)  
+9. ✅ **Sum of Impressions by Week** (Line Chart)  
+10. ✅ **Count of Tweets by Week** (Bar Chart)  
+11. ✅ **Sum of Media Engagements and Media Views by Week** (Clustered Bar Chart)  
+12. ✅ **Count of Tweets by Week** (Line Chart)  
+13. ✅ **Sum of Total Clicks by Click Type and Tweet**  
+14. ✅ **Sum of Hashtag Clicks, URL Clicks, and Profile Clicks by Tweet** (Clustered Bar Chart)  
+15. ✅ **Sum of Replies, Retweets, and Likes by Tweet Category** (Clustered Column Chart)  
 
-### 📊 Bar & Column Charts
-7. **Sum of URL Clicks by Tweet** (Clustered Bar Chart)
-8. **Sum of Replies, Retweets, and Likes by Tweet Category** (Clustered Column Chart)
-9. **Sum of Hashtag Clicks, URL Clicks, and User Profile Clicks by Tweet** (Clustered Bar Chart)
-10. **Sum of Total Clicks by Click Type and Tweet**
-
-### 📉 Line Charts
-11. **Sum of Impressions by Week**
-12. **Count of Tweets by Week** (Line Chart and Bar Chart)
-
-### 📋 Pie Chart
-13. **Distribution of Hashtag Clicks, URL Clicks, and User Profile Clicks**
-
-### 📦 Grouped Comparison
-14. **Sum of Media Engagements and Media Views by Week** (Clustered Bar Chart)
-
----
-
-## 🧠 Advanced Logic-Based Visuals
-
-### 📊 Conditional Chart: Replies, Retweets, and Likes
-
-This visual appears **only if tweets satisfy all of the following conditions**:
-- **Media Engagements > Median value**
-- **Tweet length > 20 characters**
-- **Media Views is an even number**
-- **Tweet does not contain the letter 's'**
-- **Tweet Date is an odd number**
-- **Posted between 7 AM–11 AM or 3 PM–5 PM IST**
-- **Tweet posted between June and August 2020**
-
-If **no tweets meet these criteria**, the visual is replaced with a message like:
-> _"The graph is empty because no tweets meet the conditions."_  
-> _"The graph is empty because the word count is less than 40."_
-
-These messages are displayed using **Card visuals** controlled by DAX logic.
+### 🧠 Conditional & Advanced Tasks
+- ✅ Filtered visual for clicks by tweet category (e.g., Tweets with Media, Links, Hashtags) shown only between 3PM–5PM IST and when tweet word count > 40 & date is even.
+- ✅ Comparison of replies, retweets, and likes for tweets that:
+  - Have media engagements > median
+  - Are from June–August 2020
+  - Appear only between 7AM–11AM and 3PM–5PM IST
+  - Are on odd-numbered dates
+  - Have media views as even numbers
+  - Tweet text has more than 20 characters and does **not** contain the letter 's'
 
 ---
 
-## 🧩 Filters and Interactivity
+## 📸 Dashboard Screenshot
 
-- **Month Selector**: June, July, August, etc.
-- Dynamic text displays based on tweet conditions
-- Visual-level filters based on measures like `ShowTweetInGraph = 1`
+![Dashboard Screenshot](https://github.com/KoritalaBhargavi/PowerBIProject/blob/main/Screenshot%202025-04-17%20173410.png)
 
 ---
 
-## 📍 Key Insights
-
-- Media engagement alone doesn't guarantee higher tweet interactions.
-- Hashtags and URLs contribute significantly to user engagement.
-- Peak engagement times vary by day and tweet characteristics.
-- Stringent tweet conditions can result in empty visuals, highlighting the rarity of such posts.
+## 🚀 Tools Used
+- Microsoft Power BI
+- DAX for measure calculations and logic filters
+- Time-based visual control using dynamic filtering
 
 ---
 
-## 🧠 Learnings
-
-- Built complex DAX logic for conditional filtering and display
-- Implemented dynamic visuals that respond to real-time data context
-- Used Power BI slicers and card messages to enhance user storytelling
-- Explored tweet performance trends based on time and content type
+## 👤 Author
+**Koritala Bhargavi**  
+ B.Tech (DS) | Aspiring Data Analyst  
+🔗 [LinkedIn](https://www.linkedin.com/in/koritalabhargavi)
 
 ---
 
-## 📁 Screenshot
-
-https://github.com/KoritalaBhargavi/PowerBIProject/blob/main/Screenshot%202025-04-17%20173410.png <!-- Replace with actual image path in repo -->
-
----
-
-> Designed and developed by **Koritala Bhargavi**
