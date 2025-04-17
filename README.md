@@ -1,117 +1,108 @@
-📊 Twitter Analytics Dashboard
-This project focuses on analyzing and visualizing Twitter data using Power BI. It delivers insights into tweet engagement, user interaction types, media views, and performance patterns over time, helping stakeholders understand trends and effectiveness in social media activity.
+# 📊 Twitter Analytics Dashboard
 
-🚀 Project Objectives
-Analyze tweet-level engagement metrics such as likes, retweets, replies, impressions, and clicks.
+This project analyzes Twitter data using Power BI, aiming to uncover insights about tweet engagement, media performance, and user interactions. The dashboard provides a comprehensive overview through interactive visuals and advanced DAX-based logic.
 
-Understand how users interact with tweets through media, hashtags, profile views, and URLs.
+---
 
-Segment tweets based on categories such as link content, hashtag usage, and media presence.
+## 🚀 Project Objectives
 
-Implement conditional visualizations that respond to tweet content and engagement thresholds.
+- Analyze tweet-level engagement metrics like likes, retweets, replies, impressions, and clicks.
+- Understand how users interact with tweets through media, hashtags, URLs, and profile views.
+- Segment tweets based on content type (links, hashtags, media, etc.).
+- Create conditional visuals based on specific tweet characteristics and time filters.
+- Enable dynamic messaging for graphs when data doesn’t meet specified conditions.
 
-Filter visuals based on time windows, tweet characteristics, and contextual relevance.
+---
 
-🛠️ Tools Used
-Power BI Desktop
+## 🛠️ Tools Used
 
-DAX (Data Analysis Expressions)
+- **Power BI Desktop**
+- **DAX (Data Analysis Expressions)**
+- **Twitter Engagement Dataset**
 
-Twitter Engagement Dataset
+---
 
-✅ Tasks Performed
-📌 KPIs (Card Visuals)
-Sum of Media Views
+## ✅ Tasks Performed
 
-Overall Impressions on the Post
+### 📌 KPI Cards
+1. **Sum of Media Views**
+2. **Overall Impressions on the Post**
+3. **Engagement Rate**
+4. **Count of Tweets Engaged**
 
-Engagement Rate
+### 📈 Gauges
+5. **Sum of Likes**
+6. **Max of Retweets**
 
-Count of Tweets Engaged
+### 📊 Bar & Column Charts
+7. **Sum of URL Clicks by Tweet** (Clustered Bar Chart)
+8. **Sum of Replies, Retweets, and Likes by Tweet Category** (Clustered Column Chart)
+9. **Sum of Hashtag Clicks, URL Clicks, and User Profile Clicks by Tweet** (Clustered Bar Chart)
+10. **Sum of Total Clicks by Click Type and Tweet**
 
-📈 Gauges
-Sum of Likes
+### 📉 Line Charts
+11. **Sum of Impressions by Week**
+12. **Count of Tweets by Week** (Line Chart and Bar Chart)
 
-Max of Retweets
+### 📋 Pie Chart
+13. **Distribution of Hashtag Clicks, URL Clicks, and User Profile Clicks**
 
-📊 Bar & Column Charts
-Sum of URL Clicks by Tweet (Clustered Bar)
+### 📦 Grouped Comparison
+14. **Sum of Media Engagements and Media Views by Week** (Clustered Bar Chart)
 
-Sum of Replies, Retweets, and Likes by Tweet Category (Clustered Column)
+---
 
-Sum of Hashtag Clicks, URL Clicks, and User Profile Clicks by Tweet (Clustered Bar)
+## 🧠 Advanced Logic-Based Visuals
 
-Sum of Total Clicks by Click Type and Tweet
+### 📊 Conditional Chart: Replies, Retweets, and Likes
 
-📉 Line Charts
-Sum of Impressions by Week
+This visual appears **only if tweets satisfy all of the following conditions**:
+- **Media Engagements > Median value**
+- **Tweet length > 20 characters**
+- **Media Views is an even number**
+- **Tweet does not contain the letter 's'**
+- **Tweet Date is an odd number**
+- **Posted between 7 AM–11 AM or 3 PM–5 PM IST**
+- **Tweet posted between June and August 2020**
 
-Count of Tweets by Week (Also in Bar Format)
+If **no tweets meet these criteria**, the visual is replaced with a message like:
+> _"The graph is empty because no tweets meet the conditions."_  
+> _"The graph is empty because the word count is less than 40."_
 
-📋 Pie Chart
-Distribution of Hashtag Clicks, URL Clicks, and User Profile Clicks
+These messages are displayed using **Card visuals** controlled by DAX logic.
 
-📦 Grouped Comparison Charts
-Sum of Media Engagements and Media Views by Week (Clustered Bar)
+---
 
-📂 Advanced Logic-Based Visuals
-🧠 Conditional Visualization: Tweet Category
-Tweets were classified into:
+## 🧩 Filters and Interactivity
 
-Tweets with Links
+- **Month Selector**: June, July, August, etc.
+- Dynamic text displays based on tweet conditions
+- Visual-level filters based on measures like `ShowTweetInGraph = 1`
 
-Tweets with Media
+---
 
-Tweets with Hashtags
+## 📍 Key Insights
 
-Other
+- Media engagement alone doesn't guarantee higher tweet interactions.
+- Hashtags and URLs contribute significantly to user engagement.
+- Peak engagement times vary by day and tweet characteristics.
+- Stringent tweet conditions can result in empty visuals, highlighting the rarity of such posts.
 
-Based on SEARCH(), CONTAINSSTRING(), and click metrics.
+---
 
-⏱️ Time-Based Conditional Graph
-A visual comparing replies, retweets, and likes was shown only if tweets satisfied all of the following:
+## 🧠 Learnings
 
-Media Engagement > Median
+- Built complex DAX logic for conditional filtering and display
+- Implemented dynamic visuals that respond to real-time data context
+- Used Power BI slicers and card messages to enhance user storytelling
+- Explored tweet performance trends based on time and content type
 
-Media Views are Even
+---
 
-Tweet Text Length > 20
+## 📁 Screenshot
 
-Tweet does not contain the letter 's'
+![Dashboard Screenshot](./screenshot.png) <!-- Replace with actual image path in repo -->
 
-Posted between 7–11 AM IST or 3–5 PM IST
+---
 
-Months: June to August 2020
-
-Date: Odd-numbered
-
-A card visual displays an appropriate message if no tweets satisfy these conditions, such as:
-
-"The graph is empty because no tweets meet the conditions."
-"The graph is empty because the word count is less than 40."
-
-🧩 Filters and Interactivity
-Month Selection slicer (June, July, August, etc.)
-
-Dynamic text cards that guide users based on tweet content filters
-
-Visual-Level Filters for specific graphs (e.g., filtering on a measure ShowTweetInGraph = 1)
-
-📍 Key Insights
-High media views do not always correlate with high user engagement.
-
-A significant proportion of clicks are through URLs and hashtags.
-
-Tweet engagement varies heavily by day of the week and time of posting.
-
-Complex conditions significantly reduce the pool of tweets for deeper analysis.
-
-🧠 Learnings
-Advanced DAX for logical filtering
-
-Time-zone conversion in Power BI
-
-Conditional visuals and fallback messaging
-
-Interactive dashboard storytelling
-
+> Designed and developed by **Koritala Bhargavi**
